@@ -1,0 +1,22 @@
+# Environment variables
+.env
+
+# Python virtual environment
+venv/
+__pycache__/
+
+# Database files
+*.db
+*.sqlite3
+
+# CSV exports
+*.csv
+
+# macOS files
+.DS_Store
+
+# Python cache
+*.pyc
+
+# Playwright cache
+playwright/.cache/
