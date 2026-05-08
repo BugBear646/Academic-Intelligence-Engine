@@ -250,6 +250,7 @@ AVAILABLE UNIVERSITIES
 1. Stanford Graduate School of Business
 2. MIT Sloan
 3. Harvard Business School
+...more
 ```
 
 Select university:
@@ -492,9 +493,3 @@ Areas where contributions would help:
 - research collaboration,
 - internship discovery,
 - educational outreach.
-
----
-
-## 📜 License
-
-MIT License
