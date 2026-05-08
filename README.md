@@ -1,31 +1,62 @@
-# 🎓 Academic Faculty Research Crawler
+# 🎓 Academic Intelligence Engine
 
-> AI-powered academic intelligence crawler for discovering professors, extracting research metadata, parsing CVs, identifying outreach-ready contacts, and generating ranked faculty datasets across top universities.
+<div align="center">
+
+![Python](https://img.shields.io/badge/Python-3.10+-blue?style=for-the-badge&logo=python)
+![OpenAI](https://img.shields.io/badge/OpenAI-GPT--4.1-green?style=for-the-badge&logo=openai)
+![Playwright](https://img.shields.io/badge/Playwright-Web%20Crawler-purple?style=for-the-badge)
+![SQLite](https://img.shields.io/badge/SQLite-Database-orange?style=for-the-badge&logo=sqlite)
+![MIT License](https://img.shields.io/badge/License-MIT-red?style=for-the-badge)
+
+> AI-powered academic faculty crawler for discovering professors, extracting research intelligence, parsing CVs, identifying outreach-ready contacts, and generating ranked university datasets.
+
+</div>
 
 ---
 
-# 🚀 Features
+## 🌍 Overview
 
-## 🔍 Faculty Discovery
-- Crawl university faculty directories
-- Handle dynamic lazy-loaded pages
+Academic Intelligence Engine is a deep academic crawler designed for:
+- research internship discovery,
+- academic networking,
+- professor outreach,
+- faculty intelligence gathering,
+- research collaboration discovery.
+
+The engine recursively crawls:
+- faculty directories,
+- professor profiles,
+- personal websites,
+- CV PDFs,
+- academic bios,
+
+and enriches everything using OpenAI models.
+
+---
+
+## ✨ Core Features
+
+### 🔍 Faculty Discovery
+- Dynamic faculty directory crawling
 - Infinite scroll support
-- Profile stabilization detection
+- Lazy-loaded page handling
+- Multi-university architecture
 
 ---
 
-## 🧠 AI Metadata Enrichment
+### 🧠 AI Metadata Enrichment
+
 Uses OpenAI models to:
-- extract structured professor metadata,
-- identify expertise,
-- summarize research areas,
-- standardize academic profiles.
+- infer expertise,
+- summarize research interests,
+- structure faculty metadata,
+- standardize academic records.
 
 ---
 
-## 📄 Deep CV & Resume Parsing
+### 📄 Recursive CV & Resume Parsing
 
-The crawler recursively explores:
+Crawler flow:
 
 ```text
 Faculty Profile
@@ -40,39 +71,39 @@ Email Extraction
 ```
 
 Supports:
-- CV PDFs
-- external websites
-- academic bios
-- personal homepages
+- PDF CV extraction,
+- personal websites,
+- faculty bios,
+- external academic pages.
 
 ---
 
-## 📧 Advanced Email Extraction
+### 📧 Advanced Email Discovery
 
 Extracts emails from:
 - faculty pages,
 - mailto links,
-- personal websites,
-- PDF resumes,
-- obfuscated HTML.
+- CV PDFs,
+- obfuscated HTML,
+- external websites.
 
 ---
 
-## 🏆 Faculty Relevance Scoring
+### 🏆 Faculty Scoring Engine
 
 Ranks professors based on relevance to:
 - Product Management
-- Strategy
+- Platform Strategy
 - Innovation
-- Behavioral Economics
 - Organizational Behavior
+- Behavioral Economics
 - AI Systems
 - Consumer Research
-- Platform Strategy
+- Information Systems
 
 ---
 
-## 🗂️ University-Specific Storage
+### 🗂️ University-Specific Storage
 
 Each university gets:
 - dedicated SQLite database,
@@ -80,10 +111,36 @@ Each university gets:
 
 ---
 
-# 🏗️ Project Architecture
+## 🏫 Supported Universities
+
+Currently optimized for:
+
+<div align="center">
+
+### Stanford Graduate School of Business
+
+<img src="https://www.gsb.stanford.edu/sites/default/files/styles/1630x_variable/public/resources/photo-campus-overview.jpg.webp?itok=uT4UjZ2n" width="850"/>
+
+---
+
+### MIT Sloan School of Management
+
+<img src="https://mitsloan.mit.edu/sites/default/files/styles/hero_desktop/public/2023-06/hero-campus.jpg.webp" width="850"/>
+
+---
+
+### Harvard Business School
+
+<img src="https://www.hbs.edu/Style%20Library/api/resize.aspx?imgpath=/PublishingImages/campus/aerial-campus.jpg&w=1200" width="850"/>
+
+</div>
+
+---
+
+## 🏗️ Project Architecture
 
 ```text
-academic-research-crawler/
+academic-intelligence-engine/
 │
 ├── app/
 │   │
@@ -113,29 +170,9 @@ academic-research-crawler/
 
 ---
 
-# 🏫 Supported Universities
+## ⚙️ Installation Guide
 
-Currently optimized for:
-- Stanford GSB
-- MIT Sloan
-- Harvard Business School
-
-Easily extensible to:
-- Wharton
-- Kellogg
-- Booth
-- Columbia
-- Berkeley Haas
-- Yale SOM
-- INSEAD
-- LBS
-- UCLA Anderson
-
----
-
-# ⚙️ Installation Guide
-
-# 1️⃣ Clone Repository
+### 1️⃣ Clone Repository
 
 ```bash
 git clone <your-repository-url>
@@ -144,16 +181,14 @@ git clone <your-repository-url>
 Move into project:
 
 ```bash
-cd academic-research-crawler
+cd academic-intelligence-engine
 ```
 
 ---
 
-# 2️⃣ Create Virtual Environment
+### 2️⃣ Create Virtual Environment
 
-## 🍎 macOS / Linux
-
-Create environment:
+#### 🍎 macOS / Linux
 
 ```bash
 python3 -m venv venv
@@ -167,9 +202,7 @@ source venv/bin/activate
 
 ---
 
-## 🪟 Windows
-
-Create environment:
+#### 🪟 Windows
 
 ```bash
 python -m venv venv
@@ -183,7 +216,7 @@ venv\Scripts\activate
 
 ---
 
-# 3️⃣ Upgrade pip
+### 3️⃣ Upgrade pip
 
 ```bash
 pip install --upgrade pip
@@ -191,7 +224,7 @@ pip install --upgrade pip
 
 ---
 
-# 4️⃣ Install Dependencies
+### 4️⃣ Install Dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -199,7 +232,7 @@ pip install -r requirements.txt
 
 ---
 
-# 5️⃣ Install Playwright Browsers
+### 5️⃣ Install Playwright Browsers
 
 ```bash
 playwright install
@@ -207,7 +240,7 @@ playwright install
 
 ---
 
-# 🔑 OpenAI API Setup
+## 🔑 OpenAI API Setup
 
 This project uses OpenAI APIs for:
 - metadata extraction,
@@ -217,9 +250,9 @@ This project uses OpenAI APIs for:
 
 ---
 
-# 6️⃣ Create `.env` File
+### 6️⃣ Create `.env` File
 
-Create a file named:
+Create:
 
 ```text
 .env
@@ -235,15 +268,15 @@ OPENAI_API_KEY=your_openai_api_key_here
 
 ---
 
-# 🔐 Generate OpenAI API Key
+### 🔐 Generate OpenAI API Key
 
-Get your API key from:
+Get API key from:
 
 https://platform.openai.com/api-keys
 
 ---
 
-# ⚠️ Important API Notes
+## ⚠️ Important API Notes
 
 API usage depends on:
 - your OpenAI billing plan,
@@ -253,8 +286,8 @@ API usage depends on:
 
 This repository does NOT provide:
 - bundled credits,
-- shared API access,
-- proxy APIs.
+- proxy APIs,
+- shared API access.
 
 You are responsible for:
 - your API billing,
@@ -263,7 +296,7 @@ You are responsible for:
 
 ---
 
-# ▶️ Running The Crawler
+## ▶️ Running The Crawler
 
 Start crawler:
 
@@ -273,7 +306,7 @@ python -m app.main
 
 ---
 
-# 🏛️ University Selection
+## 🏛️ University Selection
 
 You will see:
 
@@ -285,7 +318,7 @@ AVAILABLE UNIVERSITIES
 3. Harvard Business School
 ```
 
-Enter:
+Select university:
 
 ```text
 Enter university number:
@@ -299,7 +332,7 @@ Proceed with crawling? (yes/no):
 
 ---
 
-# 🔄 Crawl Execution Flow
+## 🔄 Crawl Execution Flow
 
 ```text
 Faculty Directory
@@ -327,7 +360,7 @@ SQLite Database Save
 
 ---
 
-# 🌐 Stanford Lazy Loading Handling
+## 🌐 Stanford Lazy Loading Handling
 
 Stanford dynamically loads faculty cards.
 
@@ -342,15 +375,15 @@ This avoids:
 
 ---
 
-# 📬 Validation Rules
+## 📬 Validation Rules
 
 A professor record is valid only if:
 
-## ✅ Required
+### ✅ Required
 - valid professor name
 - valid email
 
-## ➕
+### ➕
 
 At least ONE of:
 - department
@@ -359,11 +392,11 @@ At least ONE of:
 
 ---
 
-# 📧 Email Validation
+## 📧 Email Validation
 
 The crawler automatically rejects:
 - malformed emails,
-- fake placeholders,
+- fake placeholder emails,
 - duplicate emails,
 - invalid syntax.
 
@@ -378,7 +411,7 @@ noreply@stanford.edu
 
 ---
 
-# 🚫 Duplicate Prevention
+## 🚫 Duplicate Prevention
 
 Duplicates are prevented using:
 - faculty URLs,
@@ -387,9 +420,9 @@ Duplicates are prevented using:
 
 ---
 
-# 📊 Output Files
+## 📊 Output Files
 
-# 🗄️ SQLite Database
+### 🗄️ SQLite Database
 
 Example:
 
@@ -399,7 +432,7 @@ stanford_graduate_school_of_business_professors.db
 
 ---
 
-# 📄 CSV Export
+### 📄 CSV Export
 
 Generated inside:
 
@@ -415,20 +448,17 @@ stanford_graduate_school_of_business_professors.csv
 
 ---
 
-# 🧹 Database Utilities
+## 🧹 Database Utilities
 
-# Remove Duplicate Records
+### Remove Duplicate Records
 
 ```bash
 python -m app.database.remove_duplicates
 ```
 
-Removes duplicates using:
-- email.
-
 ---
 
-# Clear Database
+### Clear Database
 
 ```bash
 python -m app.database.clear_db
@@ -441,9 +471,9 @@ This:
 
 ---
 
-# 🛠️ Common Installation Issues
+## 🛠️ Common Installation Issues
 
-# ❌ Playwright Not Installed
+### ❌ Playwright Not Installed
 
 Error:
 
@@ -465,7 +495,7 @@ playwright install
 
 ---
 
-# ❌ lxml Build Errors (macOS)
+### ❌ lxml Build Errors (macOS)
 
 Fix:
 
@@ -481,7 +511,7 @@ pip install -r requirements.txt
 
 ---
 
-# ❌ Missing OpenAI API Key
+### ❌ Missing OpenAI API Key
 
 Error:
 
@@ -495,7 +525,7 @@ Fix:
 
 ---
 
-# 💻 Recommended Environment
+## 💻 Recommended Environment
 
 Recommended:
 - Python 3.10+
@@ -505,7 +535,7 @@ Recommended:
 
 ---
 
-# 🧰 Technologies Used
+## 🧰 Technologies Used
 
 - Python
 - Playwright
@@ -518,57 +548,61 @@ Recommended:
 
 ---
 
-# 🚀 Recommended Future Enhancements
+## 🚀 Future Improvements
 
 Potential upgrades:
 - async crawling,
-- proxy rotation,
-- retry queues,
-- Redis caching,
+- Redis queues,
 - semantic vector search,
-- publication extraction,
-- research-paper scoring,
+- research-paper extraction,
+- publication scoring,
 - embeddings-based ranking,
-- automated outreach generation,
+- outreach automation,
 - multi-university orchestration.
 
 ---
 
-# 🤝 Open For Contributions
+## 🤝 Open For Contributions
 
 Contributions are welcome.
 
 Areas where contributions would help:
 - support for more universities,
-- async crawling architecture,
+- async crawling,
 - publication extraction,
 - semantic search,
+- retry pipelines,
 - faculty recommendation systems,
 - outreach automation,
-- retry pipelines,
+- dashboard UI,
 - proxy support,
-- ranking improvements,
-- UI dashboard.
+- ranking improvements.
 
-If you'd like to contribute:
-1. Fork the repository
-2. Create a feature branch
-3. Commit your changes
-4. Open a pull request
+### Contribution Flow
+
+```text
+Fork Repository
+↓
+Create Feature Branch
+↓
+Commit Changes
+↓
+Open Pull Request
+```
 
 ---
 
-# ⚖️ Ethical Usage
+## ⚖️ Ethical Usage
 
 Use responsibly.
 
-❌ Do NOT:
+### ❌ Do NOT:
 - spam professors,
 - misuse extracted emails,
 - violate university policies,
 - aggressively scrape protected systems.
 
-✅ Recommended use:
+### ✅ Recommended use:
 - academic networking,
 - research collaboration,
 - internship discovery,
@@ -576,6 +610,6 @@ Use responsibly.
 
 ---
 
-# 📜 License
+## 📜 License
 
 MIT License
