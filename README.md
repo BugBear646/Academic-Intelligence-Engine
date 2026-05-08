@@ -16,11 +16,11 @@
 
 ## 🌍 Overview
 
-Academic Intelligence Engine is a deep academic crawler designed for:
+Academic Intelligence Engine is a deep academic crawler built for:
 - research internship discovery,
 - academic networking,
-- professor outreach,
-- faculty intelligence gathering,
+- faculty outreach,
+- professor intelligence gathering,
 - research collaboration discovery.
 
 The engine recursively crawls:
@@ -30,84 +30,46 @@ The engine recursively crawls:
 - CV PDFs,
 - academic bios,
 
-and enriches everything using OpenAI models.
+and enriches the extracted information using OpenAI models.
 
 ---
 
-## ✨ Core Features
+## ✨ Features
 
-### 🔍 Faculty Discovery
-- Dynamic faculty directory crawling
-- Infinite scroll support
-- Lazy-loaded page handling
-- Multi-university architecture
-
----
-
-### 🧠 AI Metadata Enrichment
-
-Uses OpenAI models to:
-- infer expertise,
-- summarize research interests,
-- structure faculty metadata,
-- standardize academic records.
+- 🔍 Dynamic faculty discovery
+- 🌐 Infinite scrolling support
+- 🧠 AI metadata enrichment
+- 📄 CV & resume parsing
+- 📧 Advanced email extraction
+- 🏆 Faculty scoring engine
+- 🗂️ University-specific databases
+- 🚫 Duplicate prevention
+- 📊 CSV exports
+- ⚡ Lazy-loading stabilization detection
 
 ---
 
-### 📄 Recursive CV & Resume Parsing
+## 🏫 Supported Universities
 
-Crawler flow:
+<div align="center">
 
-```text
-Faculty Profile
-↓
-Personal Website
-↓
-Bio / CV Page
-↓
-Resume PDF
-↓
-Email Extraction
-```
+### Stanford Graduate School of Business
 
-Supports:
-- PDF CV extraction,
-- personal websites,
-- faculty bios,
-- external academic pages.
+<img src="https://www.gsb.stanford.edu/sites/default/files/styles/1630x_variable/public/resources/photo-campus-overview.jpg.webp?itok=uT4UjZ2n" width="850"/>
 
----
+<br/>
 
-### 📧 Advanced Email Discovery
+### MIT Sloan School of Management
 
-Extracts emails from:
-- faculty pages,
-- mailto links,
-- CV PDFs,
-- obfuscated HTML,
-- external websites.
+<img src="https://mitsloan.mit.edu/sites/default/files/styles/hero_desktop/public/2023-06/hero-campus.jpg.webp" width="850"/>
 
----
+<br/>
 
-### 🏆 Faculty Scoring Engine
+### Harvard Business School
 
-Ranks professors based on relevance to:
-- Product Management
-- Platform Strategy
-- Innovation
-- Organizational Behavior
-- Behavioral Economics
-- AI Systems
-- Consumer Research
-- Information Systems
+<img src="https://www.hbs.edu/Style%20Library/api/resize.aspx?imgpath=/PublishingImages/campus/aerial-campus.jpg&w=1200" width="850"/>
 
----
-
-### 🗂️ University-Specific Storage
-
-Each university gets:
-- dedicated SQLite database,
-- dedicated CSV export.
+</div>
 
 ---
 
@@ -146,7 +108,7 @@ academic-intelligence-engine/
 
 ## ⚙️ Installation Guide
 
-### 1️⃣ Clone Repository
+**1️⃣ Clone Repository**
 
 ```bash
 git clone <your-repository-url>
@@ -160,9 +122,9 @@ cd academic-intelligence-engine
 
 ---
 
-### 2️⃣ Create Virtual Environment
+**2️⃣ Create Virtual Environment**
 
-#### 🍎 macOS / Linux
+**🍎 macOS / Linux**
 
 ```bash
 python3 -m venv venv
@@ -174,9 +136,7 @@ Activate:
 source venv/bin/activate
 ```
 
----
-
-#### 🪟 Windows
+**🪟 Windows**
 
 ```bash
 python -m venv venv
@@ -190,7 +150,7 @@ venv\Scripts\activate
 
 ---
 
-### 3️⃣ Upgrade pip
+**3️⃣ Upgrade pip**
 
 ```bash
 pip install --upgrade pip
@@ -198,7 +158,7 @@ pip install --upgrade pip
 
 ---
 
-### 4️⃣ Install Dependencies
+**4️⃣ Install Dependencies**
 
 ```bash
 pip install -r requirements.txt
@@ -206,7 +166,7 @@ pip install -r requirements.txt
 
 ---
 
-### 5️⃣ Install Playwright Browsers
+**5️⃣ Install Playwright Browsers**
 
 ```bash
 playwright install
@@ -224,7 +184,7 @@ This project uses OpenAI APIs for:
 
 ---
 
-### 6️⃣ Create `.env` File
+**6️⃣ Create `.env` File**
 
 Create:
 
@@ -242,7 +202,7 @@ OPENAI_API_KEY=your_openai_api_key_here
 
 ---
 
-### 🔐 Generate OpenAI API Key
+**7️⃣ Generate OpenAI API Key**
 
 Get API key from:
 
@@ -334,32 +294,14 @@ SQLite Database Save
 
 ---
 
-## 🌐 Stanford Lazy Loading Handling
-
-Stanford dynamically loads faculty cards.
-
-The crawler:
-- scrolls repeatedly,
-- waits 15 seconds after each scroll,
-- finalizes only after profile stabilization.
-
-This avoids:
-- incomplete extraction,
-- partial faculty discovery.
-
----
-
 ## 📬 Validation Rules
 
 A professor record is valid only if:
 
-### ✅ Required
-- valid professor name
-- valid email
+✅ Valid professor name  
+✅ Valid email  
 
-### ➕
-
-At least ONE of:
+Plus at least ONE of:
 - department
 - expertise
 - research_interests
@@ -385,28 +327,15 @@ noreply@stanford.edu
 
 ---
 
-## 🚫 Duplicate Prevention
-
-Duplicates are prevented using:
-- faculty URLs,
-- professor names,
-- professor emails.
-
----
-
 ## 📊 Output Files
 
-### 🗄️ SQLite Database
-
-Example:
+**🗄️ SQLite Database**
 
 ```text
 stanford_graduate_school_of_business_professors.db
 ```
 
----
-
-### 📄 CSV Export
+**📄 CSV Export**
 
 Generated inside:
 
@@ -424,7 +353,7 @@ stanford_graduate_school_of_business_professors.csv
 
 ## 🧹 Database Utilities
 
-### Remove Duplicate Records
+**Remove Duplicate Records**
 
 ```bash
 python -m app.database.remove_duplicates
@@ -432,7 +361,7 @@ python -m app.database.remove_duplicates
 
 ---
 
-### Clear Database
+**Clear Database**
 
 ```bash
 python -m app.database.clear_db
@@ -447,9 +376,7 @@ This:
 
 ## 🛠️ Common Installation Issues
 
-### ❌ Playwright Not Installed
-
-Error:
+**❌ Playwright Not Installed**
 
 ```text
 playwright: command not found
@@ -469,7 +396,7 @@ playwright install
 
 ---
 
-### ❌ lxml Build Errors (macOS)
+**❌ lxml Build Errors (macOS)**
 
 Fix:
 
@@ -485,9 +412,7 @@ pip install -r requirements.txt
 
 ---
 
-### ❌ Missing OpenAI API Key
-
-Error:
+**❌ Missing OpenAI API Key**
 
 ```text
 OPENAI_API_KEY not found
@@ -552,23 +477,9 @@ Areas where contributions would help:
 - proxy support,
 - ranking improvements.
 
-### Contribution Flow
-
-```text
-Fork Repository
-↓
-Create Feature Branch
-↓
-Commit Changes
-↓
-Open Pull Request
-```
-
 ---
 
 ## ⚖️ Ethical Usage
-
-Use responsibly.
 
 ### ❌ Do NOT:
 - spam professors,
