@@ -2,11 +2,11 @@
 
 <div align="center">
 
-![Python](https://img.shields.io/badge/Python-3.10+-blue?style=flat-square&logo=python)
-![OpenAI](https://img.shields.io/badge/OpenAI-GPT--4.1-green?style=flat-square&logo=openai)
-![Playwright](https://img.shields.io/badge/Playwright-WebCrawler-purple?style=flat-square)
-![SQLite](https://img.shields.io/badge/SQLite-Database-orange?style=flat-square&logo=sqlite)
-![License](https://img.shields.io/badge/License-MIT-red?style=flat-square)
+![Python](https://img.shields.io/badge/Python-3.10+-blue?style=plastic&logo=python)
+![OpenAI](https://img.shields.io/badge/OpenAI-GPT--4.1-green?style=plastic&logo=openai)
+![Playwright](https://img.shields.io/badge/Playwright-WebCrawler-purple?style=plastic)
+![SQLite](https://img.shields.io/badge/SQLite-Database-orange?style=plastic&logo=sqlite)
+![License](https://img.shields.io/badge/License-MIT-red?style=plastic)
 
 > AI-powered academic faculty crawler for discovering professors, extracting research intelligence, parsing CVs, identifying outreach-ready contacts, and generating ranked university datasets.
 
