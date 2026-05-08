@@ -111,32 +111,6 @@ Each university gets:
 
 ---
 
-## 🏫 Supported Universities
-
-Currently optimized for:
-
-<div align="center">
-
-### Stanford Graduate School of Business
-
-<img src="https://www.gsb.stanford.edu/sites/default/files/styles/1630x_variable/public/resources/photo-campus-overview.jpg.webp?itok=uT4UjZ2n" width="850"/>
-
----
-
-### MIT Sloan School of Management
-
-<img src="https://mitsloan.mit.edu/sites/default/files/styles/hero_desktop/public/2023-06/hero-campus.jpg.webp" width="850"/>
-
----
-
-### Harvard Business School
-
-<img src="https://www.hbs.edu/Style%20Library/api/resize.aspx?imgpath=/PublishingImages/campus/aerial-campus.jpg&w=1200" width="850"/>
-
-</div>
-
----
-
 ## 🏗️ Project Architecture
 
 ```text
