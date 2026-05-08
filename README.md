@@ -113,7 +113,3 @@ Contributions are welcome for extending university support, improving crawling p
 ## Usage
 
 Use responsibly for academic networking, research collaboration, and internship discovery. Do not misuse extracted contact information or violate university usage policies.
-
----
-
-MIT License
