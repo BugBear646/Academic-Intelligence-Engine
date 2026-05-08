@@ -91,12 +91,6 @@ The crawler prompts for university selection and automatically processes faculty
 
 ---
 
-## Validation
-
-A professor record is considered valid only if it contains a valid name, valid email, and at least one among department, expertise, or research interests. Invalid emails, malformed records, and duplicates are automatically rejected.
-
----
-
 ## Output
 
 The engine generates university-specific SQLite databases and CSV exports containing structured faculty intelligence data.
@@ -104,15 +98,9 @@ The engine generates university-specific SQLite databases and CSV exports contai
 Example outputs:
 
 ```text
-stanford_graduate_school_of_business_professors.db
-stanford_graduate_school_of_business_professors.csv
+university_name_professors.db
+university_name_professors.csv
 ```
-
----
-
-## Stack
-
-The project uses Python, Playwright, BeautifulSoup, Requests, SQLAlchemy, SQLite, Pandas, and OpenAI APIs.
 
 ---
 
